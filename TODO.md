@@ -12,3 +12,4 @@
 - [x] Capítulo 4: plan de implementación con presupuesto S/ 148 200 y cronograma (implementacion/generar_gantt.py).
 - [x] Capítulo 5: gobierno de arquitectura y gestión del cambio (ADKAR).
 - [x] Cierre: conclusiones, recomendaciones, glosario y 3 referencias nuevas (TOGAF, ArchiMate, ADKAR).
+- [x] Capítulo 1: teoría pendiente completada (19 subtítulos) y 6 referencias nuevas.
