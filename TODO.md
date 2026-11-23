@@ -11,3 +11,4 @@
 - [x] 3.5: diagrama integral de 4 capas (integral/generar_integral.py), trazabilidad y brechas consolidadas.
 - [x] Capítulo 4: plan de implementación con presupuesto S/ 148 200 y cronograma (implementacion/generar_gantt.py).
 - [x] Capítulo 5: gobierno de arquitectura y gestión del cambio (ADKAR).
+- [x] Cierre: conclusiones, recomendaciones, glosario y 3 referencias nuevas (TOGAF, ArchiMate, ADKAR).
