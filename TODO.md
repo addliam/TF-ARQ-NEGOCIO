@@ -7,3 +7,4 @@
 - [x] 3.1: las 7 figuras se generaron con Archi (negocio/generar_negocio.py) y se insertaron en el Word.
 - [x] 3.2: 5 figuras generadas con Archi (aplicaciones/generar_aplicaciones.py) e insertadas en el Word.
 - [x] 3.3: 6 figuras generadas con Archi (datos/generar_datos.py) e insertadas en el Word.
+- [x] 3.4: 7 figuras generadas con Archi (tecnologia/generar_tecnologia.py) e insertadas en el Word.
