@@ -1,0 +1,42 @@
+
+## OBSERVACIONES
+
+https://policlinicolosangeles.com
+
+**LIAM** (Introducción, 1, 2.1, 2.1.1, 2.1.2, 2.1.3, y por ser coordinador: carátula, Student Outcome, Glosario y Bibliografía)
+
+**ADRIAN** (2.2, 2.3, 2.3.1, 2.7)
+
+- 2.2: el modelo de negocio menciona "niños". Alinearlo con el perfil observado: 40 a 75 años, 60 % mujeres.
+- 2.3.1: la imagen de la cadena de valor no tiene explicación. Describir las actividades primarias y secundarias y señalar el eslabón del punto de dolor (caja → voucher → enfermera → médico).
+- 2.7: el ArchiMate AS-IS solo tiene una línea. Explicar las capas, actores y procesos, y dónde se ubica el dolor (lineamiento 5).
+
+**HENRY** (2.2.1, 2.6, 2.6.1, 2.6.2)
+
+- ARCHI solo elementos negocio amarillo
+
+**FREDY** (2.4, 2.4.1, 2.5, 2.5.1, 2.5.2, 2.5.3; todo sigue sin marcar como hecho en Notion)
+
+- 2.4 y 2.4.1: rehacer el mapa de capacidades. Ahora lista actores y eventos, no capacidades. Las capacidades deben ser sustantivos de gestión: Gestión de citas, Gestión de turnos, Atención médica, Gestión de RR. HH., etc. TI no va en middle office. Además, el párrafo introductorio está mal redactado.
+
+-- para TF leeme
+Como minimo debe estar lo del ppt
+En dato la colum aplicacion reemplaza *impacto* en principios
+Balanceador de carga y cluster para alta disponibilidad
+Instancia dibujada fuera del SGBD
+Arquitectura por cada nivel de capa: capas por cada color.
+2 cosas deben ir por cada capa. 
+Archi mate diagrama AS IS y TO BE.
+Al final juntar en arquitectura integral.
+Principio 
+Catálogo 
+Matrices
+Diagramas
+Mapa capacidad
+Si usamos ESB arquitectura debe estar en mapa capacidades en middle
+Si o si poner ETL
+Debo ver
+Servidores con plataforma 
+En una red de servidores
+DMZ para entrar a la midle capa
+---
