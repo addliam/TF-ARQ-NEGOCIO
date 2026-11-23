@@ -1,6 +1,6 @@
 # Diagramas 3.1: Arquitectura de negocio
 
-Especificación para generar los diagramas con el plugin ArchiMate. Usa **solo elementos de la capa de negocio (amarillo)**, salvo en el mapa de capacidades, donde las capacidades son elementos de estrategia.
+Especificación de los diagramas. Se generan con `python negocio/generar_negocio.py`, que crea `negocio_3_1.archimate` (se abre en Archi) y exporta F1 a F7 en PNG usando Archi en línea de comandos. Usa **solo elementos de la capa de negocio (amarillo)**, salvo en el mapa de capacidades, donde las capacidades son elementos de estrategia.
 
 Notación: `Tipo: Nombre`. Relaciones: `A --tipo--> B`.
 

@@ -1,7 +1,7 @@
 # TODO
 
 - [ ] Canvas: el bloque "Segmento de mercado" todavía dice "niños".
-- [ ] Mapa de capacidades: hay que redibujarlo con los nombres nuevos, sin actores, sin procesos y sin el bloque de TI.
-- [ ] ArchiMate AS-IS: hay que quitar los elementos celestes (Historia clínica, Receta, Servicio de HC digital y Alfa Vía) para que quede solo en amarillo.
+- [x] Mapa de capacidades (2.3): reemplazado por negocio/F1_mapa_capacidades_asis.png.
+- [x] ArchiMate AS-IS (2.6): reemplazado por negocio/F6_negocio_asis.png (solo elementos de negocio).
 - [ ] Cadena de valor (imagen): cambiar "Sistema Alfa Vía" por "software de gestión de historias clínicas".
-- [ ] 3.1: generar las 7 figuras con el plugin ArchiMate según diagramas/ARCHIMATE_3_1.md y reemplazar los marcadores amarillos "[Figura pendiente ...]".
+- [x] 3.1: las 7 figuras se generaron con Archi (negocio/generar_negocio.py) y se insertaron en el Word.
