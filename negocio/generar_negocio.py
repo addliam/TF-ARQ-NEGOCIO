@@ -131,22 +131,22 @@ v.note("Resaltado: bucle nuevo del TO-BE. El turno se recalcula mientras el paci
 
 # ------------------------------------------------------------------ F6 AS-IS
 v = View("F6 Modelo de negocio AS-IS", "F6_negocio_asis.png")
-for k, n, x in [("aPac", "Paciente", 20), ("aRec", "Recepcionista", 285), ("aCaj", "Cajero", 560), ("aEnf", "Enfermera", 800), ("aMed", "Médico", 1040), ("aQf", "Químico-farmacéutico", 1290)]:
+for k, n, x in [("aPac", "Paciente", 20), ("aRec", "Recepcionista", 195), ("aCaj", "Cajero", 410), ("aEnf", "Enfermera", 740), ("aMed", "Médico", 1080), ("aQf", "Químico-farmacéutico", 1320)]:
     v.put(k, "business-actor", n, x, 20, 150, 55)
 v.put("eSol", "business-event", "Solicitud de una consulta", 20, 170, 150, 55)
 v.put("pRes", "business-process", "Reservar cita", 200, 170, 140, 55)
-v.put("pTri", "business-process", "Realizar triaje", 370, 170, 140, 55)
-v.put("pCob", "business-process", "Cobro de pago de cita reservada", 550, 170, 170, 60)
-v.put("pRcp", "business-process", "Recepcionar comprobante", 790, 170, 165, 55)
-v.put("pEsp", "business-process", "Esperar turno de atención", 790, 320, 165, 55)
-v.put("pAte", "business-process", "Atender consulta médica", 1030, 170, 170, 55)
-v.put("pDis", "business-process", "Proporcionar medicamentos / recepcionar orden de exámenes", 1270, 170, 210, 65)
-v.put("oComp", "business-object", "Comprobante de pago (hora fija)", 550, 320, 170, 55)
-v.put("oRec", "business-object", "Receta u orden de exámenes", 1030, 320, 170, 55)
-for a, b in [("eSol", "pRes"), ("pRes", "pTri"), ("pTri", "pCob"), ("pCob", "pRcp"), ("pRcp", "pEsp"), ("pRcp", "pAte"), ("pAte", "pDis")]:
+v.put("pCob", "business-process", "Cobro de pago de cita reservada", 400, 170, 170, 60)
+v.put("pRcp", "business-process", "Recepcionar comprobante", 630, 170, 165, 55)
+v.put("pTri", "business-process", "Realizar triaje (signos vitales, peso y talla)", 850, 170, 170, 65)
+v.put("pEsp", "business-process", "Esperar turno de atención", 850, 330, 170, 55)
+v.put("pAte", "business-process", "Atender consulta médica", 1070, 170, 170, 55)
+v.put("pDis", "business-process", "Proporcionar medicamentos / recepcionar orden de exámenes", 1300, 170, 210, 65)
+v.put("oComp", "business-object", "Comprobante de pago (hora fija)", 400, 330, 170, 55)
+v.put("oRec", "business-object", "Receta u orden de exámenes", 1070, 330, 170, 55)
+for a, b in [("eSol", "pRes"), ("pRes", "pCob"), ("pCob", "pRcp"), ("pRcp", "pTri"), ("pTri", "pEsp"), ("pEsp", "pAte"), ("pAte", "pDis")]:
     v.rel("triggering", a, b)
 v.rel("access", "pCob", "oComp"); v.rel("access", "pRcp", "oComp", access="read"); v.rel("access", "pAte", "oRec")
-for a, p in [("aRec", "pRes"), ("aRec", "pTri"), ("aCaj", "pCob"), ("aEnf", "pRcp"), ("aMed", "pAte"), ("aQf", "pDis")]:
+for a, p in [("aRec", "pRes"), ("aCaj", "pCob"), ("aEnf", "pRcp"), ("aEnf", "pTri"), ("aMed", "pAte"), ("aQf", "pDis")]:
     v.rel("assignment", a, p)
 v.rel("association", "aPac", "eSol")
 v.note("Punto de dolor: el comprobante en papel es el único vínculo entre caja y consultorio y nada recalcula la hora del turno.", 300, 430, 520, 45)
